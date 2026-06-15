@@ -15,6 +15,6 @@ button = machine.Pin(14, machine.Pin.IN, machine.Pin.PULL_UP)
 print("Press the button!")
 
 while True:
-    if button.value() == 0:  # button pulled pin LOW when pressed
+    if button.value() == 0:  # button pulls pin LOW when pressed
         print("Button pressed!")
         utime.sleep_ms(200)  # simple debounce delay
